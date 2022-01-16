@@ -2,15 +2,12 @@ const express = require('express');
 
 //set up express app
 const app = express();
-const port = process.env.PORT || 3000;
+
+//initialize routes
+app.use('/api', require('./routes/api'));
 
 //listen for request
-app.get('/', (req, res) =>{
-    console.log('GET request');
-    res.send('Hello World!');
-    res.end();
-});
-
+const port = process.env.PORT || 3000;
 app.listen(port, () =>{
     console.log('App listening for requests!')
 });
