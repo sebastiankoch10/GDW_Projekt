@@ -11,7 +11,11 @@ router.post('/touren', function(req, res){
     console.log(req.body);
     res.send({
         type:'POST',
-        name: req.body.name
+        stadt1: req.body.stadt2,
+        stadt2: req.body.stadt2,
+        beschreibung: req.body.beschreibung,
+        schwierigkeit: req.body.schwierigkeit,
+        fahrradart: req.body.fahrradart
     });
 });
 
