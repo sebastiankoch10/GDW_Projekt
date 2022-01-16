@@ -60,8 +60,5 @@
     "start": "node source-code/app.js"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.2"
-  }  
+  "license": "ISC"
 }
