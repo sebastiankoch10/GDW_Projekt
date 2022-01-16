@@ -1,0 +1,26 @@
+{
+  "name": "gdw_projekt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BenutzerErstelltTour.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastiankoch10/GDW_Projekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastiankoch10/GDW_Projekt/issues"
+  },
+  "homepage": "https://github.com/sebastiankoch10/GDW_Projekt#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
