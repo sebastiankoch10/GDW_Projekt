@@ -1,5 +1,4 @@
 const express = require('express');
-const { request } = require('http');
 const router = express.Router();
 
 //get a list of all tours
