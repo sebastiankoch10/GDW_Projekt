@@ -1,10 +1,23 @@
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 3000
+const http = require('http');
+const fs = require('fs');
+const port = process.env.port || 3000
 
-app.get('/', (req, res) => {
-console.log("Here")
-res.sendStatus(500).json({message:"Error"})
-})
+const server = http.createServer((req, res) =>{
 
-app.listen(port)
+    //set header content type
+    res.setHeader('Content-Type', 'text/html');
+
+    fs.readFile('./views/index.html', (err, data) =>{
+        if(err){
+            console.log(err);
+            res.end();
+        }else{
+            //res.write(data);
+            res.end(data);
+        }
+    })
+});
+
+server.listen(port, 'localhost', () =>{
+    console.log('listening for requests on port 3000')
+});
