@@ -9,7 +9,10 @@ router.get('/touren', function(req, res){
 //add a new tour
 router.post('/touren', function(req, res){
     console.log(req.body);
-    res.send({type:'POST'});
+    res.send({
+        type:'POST',
+        name: req.body.name
+    });
 });
 
 /* //update a tour
