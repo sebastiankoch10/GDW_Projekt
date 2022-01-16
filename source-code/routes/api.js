@@ -1,4 +1,5 @@
 const express = require('express');
+const { request } = require('http');
 const router = express.Router();
 
 //get a list of all tours
@@ -8,7 +9,8 @@ router.get('/touren', function(req, res){
 
 //add a new tour
 router.post('/touren', function(req, res){
-    res.send({type:'POST'})
+    console.log(req.body);
+    res.send({type:'POST'});
 });
 
 /* //update a tour
